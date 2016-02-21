@@ -1,0 +1,20 @@
+{
+  "name": "mblog",
+  "version": "0.0.1",
+  "description": "静态博客系统，支持markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \" Errr: no test specified\" && exit 1"
+  },
+  "author": "chaozhou",
+  "license": "MIT",
+  "bin": {
+    "mblog": "./bin/mblog.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "express": "^4.13.4",
+    "markdown-it": "^6.0.0",
+    "serve-static": "^1.10.2"
+  }
+}
