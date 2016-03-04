@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>西安-晁州博客</title>
+    <link href="/assets/style.css" rel="stylesheet">
+</head>
+<body>
+    <ul>{% for post in posts %}
+        <li>
+            <span class="post-date">{{post.date|escape}}</span>
+            <a href="{{post.url|escape}}" class="post-title">{{post.title|escape}}</a>
+        </li>{% endfor %}
+    </ul>
+</body>
+</html>
