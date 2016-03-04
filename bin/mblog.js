@@ -21,9 +21,7 @@ program
 program
     .command("create [dir]")
     .description("创建一个空白博客")
-    .action(function(dir){
-        console.log("create %s",dir);
-    });
+    .action(require("../lib/cmd_create.js"));
 
 //preview
 program

@@ -6,6 +6,7 @@
     <link href="/assets/style.css" rel="stylesheet">
 </head>
 <body>
+    <h1>{{config.title|escape}}</h1>
     <ul>{% for post in posts %}
         <li>
             <span class="post-date">{{post.date|escape}}</span>
