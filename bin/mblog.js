@@ -36,9 +36,7 @@ program
     .command("build [dir]")
     .description("生成全站静态html")
     .option("-o,--output <dir>","生成的静态html存放目录")
-    .action(function (dir,option) {
-        console.log("build %s,output %s",dir,option.output);
-    });
+    .action(require("../lib/cmd_build.js"));
 
 //start
 program.parse(process.argv);
